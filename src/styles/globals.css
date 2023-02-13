@@ -1,0 +1,110 @@
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: Comic Sans MS, Trebuchet MS;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.headerText {
+  @apply p-4 cursor-pointer;
+}
+
+.headerText h3 {
+  @apply relative text-headerText font-medium text-white opacity-75;
+}
+
+.headerText h3::after {
+  content: "  ";
+  @apply absolute right-[50%] left-[50%] bottom-[-5px] border-b-2 border-solid border-b-white transition duration-300;
+}
+
+.headerText h3:hover {
+  @apply opacity-100;
+}
+
+.headerText h3:hover::after {
+  @apply right-0 left-0;
+}
+
+.menu span:hover {
+  @apply opacity-75;
+}
+
+.ant-drawer-header .ant-drawer-header-title .ant-drawer-title {
+  @apply text-[#FAF0E6] text-[18px];
+}
+
+.introduce li {
+  @apply py-1;
+}
+
+.introduce li button {
+  @apply text-[#CEB195] border-[#CEB195] hover:bg-[#CEB195];
+}
+
+.introduce li .ant-btn:hover {
+  @apply text-[#FAF0E6] border-[#FAF0E6];
+}
+
+.introduce .content {
+  @apply text-[16px] text-[#B0906F] font-medium;
+}
+
+.circle {
+  @apply w-6 h-6 rounded-full bg-[#FAF0E6];
+}
+
+.divider {
+  @apply w-full h-[1px] border-solid border-[1px] border-[#FAF0E6];
+}
+
+.resumeContentDivider {
+  @apply w-full h-auto ml-[4.5%] phonexxs:ml-[3.75%] phonexs:ml-[3.5%] phonebase:ml-[3.25%] phonesm:ml-[3%] phonemd:ml-[2.5%] phonelg:ml-[2.25%] sm:ml-[1.75%] pl-[5%] pb-[5%] border-l-[2px];
+}
+
+.resumeTitle {
+  @apply text-base xs:text-lg sm:text-resumeTitle text-[#8B4513] font-bold;
+}
+
+.resumeSubTitle {
+  @apply text-sm xs:text-base sm:text-resumeSubTitle text-[#704214] font-medium;
+}
+
+.resumeContent {
+  @apply text-xs xs:text-sm sm:text-resumeContent text-[#FFF5EE] font-normal break-words;
+}
+
+.footerIcon {
+  @apply text-3xl text-[#FFFAF0] px-2 hover:text-[#DABEA7];
+}
