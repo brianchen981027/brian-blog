@@ -40,10 +40,10 @@ const About = () => {
             </li>
             <li>
               <span className="content text-ellipsis break-words">
-                擁有一年半前端開發經驗，熟悉Typescript、React。
-                追求簡潔易讀的程式碼，遵守
-                DRY的開發概念建立易讀、高擴充性的Component。
-                重視團隊的合作與溝通，正在尋找一個能夠讓我穩定發揮並且不斷成長的環境。
+                擁有一年半前端開發經驗，熟悉Typescript、React。<br/>
+                追求簡潔易讀的程式碼，建立易讀、高擴充性的Component。<br/>
+                重視團隊合作與溝通，希望以最少的時間達成最大的效益。<br/>
+                我正在尋找一個能夠讓我穩定發揮並且不斷增進技術能力的工作環境，若您有相關的工作機會，請與我聯繫！<br/>
                 以下連結有更詳細說明過往經歷及作品集，非常感謝您抽空觀看，請多多指教，謝謝！
               </span>
             </li>
@@ -68,10 +68,7 @@ const About = () => {
                   CakeResume
                 </Button>
               </Link>
-              <Link
-                href="https://www.cakeresume.com/me/brian.chen"
-                target="_blank"
-              >
+              <Link href="https://github.com/brianchen981027" target="_blank">
                 <Button size="large">GitHub</Button>
               </Link>
             </li>

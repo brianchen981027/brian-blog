@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 z-50 grid grid-cols-2 w-full h-auto bg-[#DABEA7] shadow-md px-7 py-5 md:px-12">
+    <header className="fixed top-0 z-50 grid grid-cols-2 w-full h-auto bg-[#DABEA7] shadow-md px-7 py-3 md:px-12 md:py-5">
       {/* Left */}
       <div className="relative flex items-center h-10 cursor-pointer my-auto">
         <Image

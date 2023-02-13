@@ -1,6 +1,6 @@
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
@@ -81,6 +81,10 @@ a {
   @apply text-[16px] text-[#B0906F] font-medium;
 }
 
+.introduce span.content {
+  @apply text-[14px] text-[#876D5A] font-medium;
+}
+
 .circle {
   @apply w-6 h-6 rounded-full bg-[#FAF0E6];
 }
@@ -103,6 +107,22 @@ a {
 
 .resumeContent {
   @apply text-xs xs:text-sm sm:text-resumeContent text-[#FFF5EE] font-normal break-words;
+}
+
+.websiteTitle {
+  @apply text-lg xs:text-xl sm:text-worksTitle text-[#876D5A] font-bold;
+}
+
+.websiteInfo {
+  @apply text-base xs:text-lg sm:text-worksInfo text-[#CD853F] font-semibold mt-2 md:mt-4;
+}
+
+.websiteContent {
+  @apply text-sm xs:text-base sm:text-worksContent text-[#704214] font-normal break-words mt-2 md:mt-4;
+}
+
+.websiteContent p {
+  @apply mt-2;
 }
 
 .footerIcon {

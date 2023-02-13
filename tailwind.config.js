@@ -9,6 +9,9 @@ module.exports = {
         resumeTitle: ["20px", "32px"],
         resumeSubTitle: ["16px", "24px"],
         resumeContent: ["12px", "24px"],
+        worksTitle: ["24px", "32px"],
+        worksInfo: ["22px", "28px"],
+        worksContent: ["18px", "24px"],
         footerText: ["22.8px", "26.8px"],
       },
       screens: {
