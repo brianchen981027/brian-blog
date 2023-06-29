@@ -40,20 +40,20 @@ a {
   @apply p-4 cursor-pointer;
 }
 
-.headerText h3 {
+.headerText h4 {
   @apply relative text-headerText font-medium text-white opacity-75;
 }
 
-.headerText h3::after {
+.headerText h4::after {
   content: "  ";
   @apply absolute right-[50%] left-[50%] bottom-[-5px] border-b-2 border-solid border-b-white transition duration-300;
 }
 
-.headerText h3:hover {
+.headerText h4:hover {
   @apply opacity-100;
 }
 
-.headerText h3:hover::after {
+.headerText h4:hover::after {
   @apply right-0 left-0;
 }
 

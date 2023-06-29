@@ -22,8 +22,7 @@ const Resume = () => {
                 alt="Fu Jen University"
                 className="mx-auto hover:bg-[#FAF0E6]"
                 height={125}
-                objectFit="contain"
-                objectPosition="center"
+                style={{ objectFit: "contain", objectPosition: "center" }}
                 src={FuJenLogo}
               />
             </Link>
@@ -70,8 +69,7 @@ const Resume = () => {
                 alt="Shoalter Technology Ltd."
                 className="mx-auto mt-6 hover:bg-[#FAF0E6]"
                 height={100}
-                objectFit="contain"
-                objectPosition="center"
+                style={{ objectFit: "contain", objectPosition: "center" }}
                 src={ShoalterLogo}
               />
             </Link>
@@ -157,8 +155,7 @@ const Resume = () => {
                 alt="Fu Jen University"
                 className="mx-auto hover:bg-[#FAF0E6]"
                 height={125}
-                objectFit="contain"
-                objectPosition="center"
+                style={{ objectFit: "contain", objectPosition: "center" }}
                 src={FuJenLogo}
               />
             </Link>
@@ -209,8 +206,7 @@ const Resume = () => {
                 alt="Shoalter Technology Ltd."
                 className="mx-auto mt-6 hover:bg-[#FAF0E6]"
                 height={100}
-                objectFit="contain"
-                objectPosition="center"
+                style={{ objectFit: "contain", objectPosition: "center" }}
                 src={ShoalterLogo}
               />
             </Link>

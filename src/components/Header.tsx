@@ -22,8 +22,7 @@ const Header = () => {
         <Image
           alt="Brian's Blog"
           width={175}
-          objectFit="contain"
-          objectPosition="left"
+          style={{ objectFit: "contain", objectPosition: "center" }}
           src={HeaderIcon}
         />
       </div>
@@ -31,13 +30,13 @@ const Header = () => {
       {/* Right */}
       <ul className="hidden sm:flex sm:items-center sm:justify-end">
         <li className="headerText">
-          <h3 onClick={() => handleClickScroll("about")}>About</h3>
+          <h4 onClick={() => handleClickScroll("about")}>About</h4>
         </li>
         <li className="headerText">
-          <h3 onClick={() => handleClickScroll("resume")}>Resume</h3>
+          <h4 onClick={() => handleClickScroll("resume")}>Resume</h4>
         </li>
         <li className="headerText">
-          <h3 onClick={() => handleClickScroll("works")}>Works</h3>
+          <h4 onClick={() => handleClickScroll("works")}>Works</h4>
         </li>
       </ul>
 
@@ -69,7 +68,7 @@ const Header = () => {
       >
         <ul className="flex flex-col items-center">
           <li className="w-full rounded-md hover:bg-[#DABEA7]">
-            <h3
+            <h4
               className="py-2 hover:text-[#FFFAF0]"
               onClick={() => {
                 setOpen(false);
@@ -77,10 +76,10 @@ const Header = () => {
               }}
             >
               About
-            </h3>
+            </h4>
           </li>
           <li className="w-full rounded-md hover:bg-[#DABEA7]">
-            <h3
+            <h4
               className="py-2 hover:text-[#FFFAF0]"
               onClick={() => {
                 setOpen(false);
@@ -88,10 +87,10 @@ const Header = () => {
               }}
             >
               Resume
-            </h3>
+            </h4>
           </li>
           <li className="w-full rounded-md hover:bg-[#DABEA7]">
-            <h3
+            <h4
               className="py-2 hover:text-[#FFFAF0]"
               onClick={() => {
                 setOpen(false);
@@ -99,7 +98,7 @@ const Header = () => {
               }}
             >
               Works
-            </h3>
+            </h4>
           </li>
         </ul>
       </Drawer>

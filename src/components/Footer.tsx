@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import { FacebookOutlined, InstagramOutlined, LinkedinFilled, MailFilled } from '@ant-design/icons';
-import Link from 'next/link';
+import {
+  FacebookOutlined,
+  InstagramOutlined,
+  LinkedinFilled,
+  MailFilled,
+} from "@ant-design/icons";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -27,9 +32,9 @@ const Footer = () => {
             <LinkedinFilled className="footerIcon" alt="LinkedIn" />
           </Link>
         </div>
-        <h3 className="text-xs sm:text-sm text-[#FFFAF0] font-normal py-4">
+        <h4 className="text-xs sm:text-sm text-[#FFFAF0] font-normal py-4">
           Copyright © 2023 Brian Chen. All Rights Reserved
-        </h3>
+        </h4>
       </div>
     </footer>
   );

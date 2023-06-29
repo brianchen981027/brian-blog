@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import { MailOutlined, PhoneOutlined } from '@ant-design/icons';
-import { Button } from 'antd';
-import Image from 'next/image';
-import Link from 'next/link';
+import { MailOutlined, PhoneOutlined } from "@ant-design/icons";
+import { Button } from "antd";
+import Image from "next/image";
+import Link from "next/link";
 
-import InfoPic from '@/Images/InfoPic.jpg';
+import InfoPic from "@/Images/InfoPic.jpg";
 
 const About = () => {
   return (
@@ -22,8 +22,7 @@ const About = () => {
           <Image
             alt="Brian's Blog"
             height={300}
-            objectFit="contain"
-            objectPosition="center"
+            style={{ objectFit: "contain", objectPosition: "center" }}
             src={InfoPic}
           />
         </div>
@@ -36,27 +35,31 @@ const About = () => {
               </h1>
             </li>
             <li>
-              <h3 className="content">前端工程師 (Front-End Developer)</h3>
+              <h4 className="content">前端工程師 (Front-End Developer)</h4>
             </li>
             <li>
               <span className="content text-ellipsis break-words">
-                擁有一年半前端開發經驗，熟悉Typescript、React。<br/>
-                追求簡潔易讀的程式碼，建立易讀、高擴充性的Component。<br/>
-                重視團隊合作與溝通，希望以最少的時間達成最大的效益。<br/>
-                我正在尋找一個能夠讓我穩定發揮並且不斷增進技術能力的工作環境，若您有相關的工作機會，請與我聯繫！<br/>
+                擁有一年半前端開發經驗，熟悉Typescript、React。
+                <br />
+                追求簡潔易讀的程式碼，建立易讀、高擴充性的Component。
+                <br />
+                重視團隊合作與溝通，希望以最少的時間達成最大的效益。
+                <br />
+                我正在尋找一個能夠讓我穩定發揮並且不斷增進技術能力的工作環境，若您有相關的工作機會，請與我聯繫！
+                <br />
                 以下連結有更詳細說明過往經歷及作品集，非常感謝您抽空觀看，請多多指教，謝謝！
               </span>
             </li>
             <li className="flex items-baseline">
               <PhoneOutlined className="content mr-2" />
-              <h3 className="content hover:text-[#CEB195]">0909-891639</h3>
+              <h4 className="content hover:text-[#CEB195]">0909-891639</h4>
             </li>
             <li className="flex items-baseline">
               <MailOutlined className="content mr-2" />
               <Link href="mailto:ahsuan1027@gmail.com">
-                <h3 className="content hover:text-[#CEB195]">
+                <h4 className="content hover:text-[#CEB195]">
                   ahsuan1027@gmail.com
-                </h3>
+                </h4>
               </Link>
             </li>
             <li className="mt-2">
